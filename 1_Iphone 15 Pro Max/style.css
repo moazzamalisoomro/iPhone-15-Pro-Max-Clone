@@ -1,0 +1,581 @@
+/* global style begins */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/* global style ends */
+
+
+/* body style begins */
+body {
+  background: linear-gradient(180deg, #270a0a 0%, #943d3d 100%);
+  /* background: black; */
+  /* background-size: 100% 300px;
+  background-position: 0% 100%; */
+
+  /* background: url('./images/nature2.jpg');
+  background-size: cover;  */
+}
+/* body style ends */
+
+
+
+/* iphone backside style begins */
+
+/* Styling for the iPhone backside container begins */
+.iphone-backside-container {
+  height: 100vh;
+}
+/* Styling for the iPhone backside container ends */
+
+/* Styling for the iPhone backside frame begins */
+.iphone-backside-frame {
+  margin: 25px 300px;
+  border: 7px solid #78746c;
+  border-radius: 50px;
+  width: 20%;
+  height: 92%;
+  background: #89847d; /* Light grey color for the backside */
+  position: relative;
+  background: linear-gradient(145deg, #89847d, #b1a59a); /* Gradient background for a shinier look */
+  box-shadow: 
+  0 4px 8px rgba(255, 255, 255, 0.1),  /* added a white shadow for brightness */
+  0 8px 16px rgba(0, 0, 0, 0.1), 
+  0 16px 32px rgba(0, 0, 0, 0.1), 
+  0 32px 64px rgba(0, 0, 0, 0.1);  
+}
+
+.iphone-backside-frame:hover {
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 
+              0 12px 24px rgba(0, 0, 0, 0.15), 
+              0 24px 48px rgba(0, 0, 0, 0.15), 
+              0 48px 96px rgba(0, 0, 0, 0.15);
+}
+/* Styling for the iPhone backside frame ends */
+
+/* Styling for the camera module begins */
+.camera-module {
+  position: absolute;
+  top: 10px;
+  left: 55%;
+  transform: translateX(-120%);
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  width: 100px;
+  justify-content: center;
+  border: 2px solid rgb(157, 152, 152);
+  border-radius: 25px;
+  background-color: #928c81;
+  padding: 12px 0;
+  box-shadow: 
+  0 4px 8px rgba(208, 198, 198, 0.1),  /* added a white shadow for brightness */
+  0 8px 16px rgba(201, 188, 188, 0.1), 
+  0 16px 32px rgba(195, 188, 188, 0.1), 
+  0 32px 64px rgba(203, 193, 193, 0.1);  
+}
+
+.camera-lens {
+  width: 35px;
+  height: 35px;
+  background: black;
+  border-radius: 50%;
+  border: 3px solid #7b7676;
+}
+
+.camera-lens3{
+  margin-left: 7%;
+}
+
+.camera-lens2{
+  position: relative;
+  top: 18px;
+}
+
+.flash {
+  width: 15px;
+  height: 15px;
+  background: #fdfd96; /* Yellow color for the flash */
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  position: relative;
+  bottom: 45px;
+  left: 8px;
+}
+
+.lidar {
+  width: 15px;
+  height: 15px;
+  background: #333;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  position: relative;
+  top: 15px;
+  right: 15px;
+}
+/* Styling for the camera module ends */
+
+.volume_up_2{
+  border: 4px solid #78746c;
+  height: 8%;
+  border-radius: 50px;
+  position: absolute;
+  top: 140px;
+  left: 240px;
+}
+
+.volume_down_2{
+  border: 4px solid #78746c;
+  height: 8%;
+  border-radius: 50px;
+  position: absolute;
+  top: 178.5px;
+  left: 240px;
+}
+
+.switch_2{
+  border: 4px solid #78746c;
+  height: 12%;
+  border-radius: 50px;
+  position: absolute;
+  top: 150px;
+  right: 240px;
+}
+
+/* Styling for the Apple logo begins */
+.apple-logo {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.apple-logo img {
+  width: 60px;
+}
+/* Styling for the Apple logo ends */
+
+/* Styling for the text below the logo begins */
+.bottom-text {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  text-align: center;
+  color: #666;
+}
+
+.bottom-text p {
+  font-size: 10px;
+  margin: 2px 0;
+}
+/* Styling for the text below the logo ends */
+
+/* iphone backside style ends */
+
+
+
+/* iphone front side screen style begins */
+
+.main_iphone{
+    height: 100vh;
+}
+
+.iphone_border{
+    margin: 25px 620px;
+    border: 7px solid #78746c;
+    border-radius: 50px;
+    /* background-color: gray; */
+    width: 20%;
+    height: 92%;
+    /* display: flex; */
+    /* text-align: center; */
+    align-items: center;
+    justify-content: center;
+    background: url('./images/iphone_walpr_wht.jpg');
+    background-size: cover;
+    box-shadow: 
+    0 4px 8px rgba(255, 255, 255, 0.1),  /* added a white shadow for brightness */
+    0 8px 16px rgba(0, 0, 0, 0.1), 
+    0 16px 32px rgba(0, 0, 0, 0.1), 
+    0 32px 64px rgba(0, 0, 0, 0.1);
+
+background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),  /* added a subtle gradient for brightness */
+       url('./images/iphone_walpr_wht.jpg');
+background-size: cover;
+margin-top: -560px;
+ }
+
+.iphone_border:hover {
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 
+                0 12px 24px rgba(0, 0, 0, 0.15), 
+                0 24px 48px rgba(0, 0, 0, 0.15), 
+                0 48px 96px rgba(0, 0, 0, 0.15);
+}
+
+.top_notch{
+    border: 4px solid black;
+    height: 3%;
+    width: 5.3%;
+    border-radius: 50px;
+    position: absolute;
+    top: 40px;
+    left: 710px;
+    background-color: black;
+}
+
+.two_boxes{
+    display: flex;
+    position: absolute;
+    top: 70px;
+    left: 640px;
+    gap: 15px;
+    text-align: start; 
+}
+
+.box_1 , .box_2{
+    height: 100px;
+    width: 100px;
+    border-radius: 18px;
+}
+
+.two_boxes .box_1{
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)), rgb(83, 140, 182);
+    color: white;
+}
+
+.b1_txt{
+    margin: 8px 0 0 10px;
+    line-height: 17px;
+}
+
+.country{
+    font-size: 12px;
+}
+
+.temp{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.b1_sun{
+    margin-top: 12px;
+    margin-left: 10px;
+    line-height: 12px;
+}
+
+.sun img{
+    width: 15px;
+}
+
+.b1_sun p{
+    font-size: 10px;
+}
+
+.two_boxes .box_2{
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)), rgb(218, 223, 226);
+}
+
+.b2_txt{
+    margin: 8px 0 0 10px;
+    line-height: 17px;
+}
+
+.day{
+    font-size: 12px;
+    color: #de5945;
+    font-weight: 600;
+}
+
+.date{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.events{
+    margin-top: 15px;
+    margin-left: 10px;
+    line-height: 12px;
+}
+
+.events p{
+    font-size: 10px;
+    color: rgb(165, 160, 160);
+    font-weight: 500;
+}
+
+.titles{
+    display: flex;
+    position: relative;
+    top: 143px;
+    color: white;
+    font-size: 12px;
+    left: 36.5px;
+    font-weight: 400;
+    gap: 62px;
+    opacity: 0.9;
+}
+
+
+.volume_up{
+    border: 4px solid #78746c;
+    /* border: 4px solid red; */
+    height: 8%;
+    border-radius: 50px;
+    position: absolute;
+    top: 140px;
+    left: 866.5px;
+}
+
+.volume_down{
+    border: 4px solid #78746c;
+    /* border: 4px solid black; */
+    height: 8%;
+    border-radius: 50px;
+    position: absolute;
+    top: 183.5px;
+    left: 866.5px;
+}
+
+.switch{
+    border: 4px solid #78746c;
+    height: 12%;
+    border-radius: 50px;
+    position: absolute;
+    top: 150px;
+    left: 618px;
+}
+
+/* .all_apps{
+    display: flex;
+} */
+
+.all_apps{
+    text-align: center;
+    align-items: baseline;
+}
+
+.all_apps p{
+    font-size: 9.5px;
+    font-weight: 300;
+    opacity: 0.90;
+    letter-spacing: 0.5px;
+}
+
+.all_apps img{
+    width: 40px;
+}
+
+.screen_apps{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    position: relative;
+    top: 160px;
+    left: 0px;
+    gap: 5px 0px;
+    color: white;
+    line-height: 15px;
+}
+
+.bottom_apps{
+    /* display: flex; */
+    position: relative;
+    top: 175px;
+    left: 8px;
+    /* background: linear-gradient(135deg, #ace2e8 0%, #c9e4ca 50%, #87d3f2 100%); */
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 4px 0px;
+    padding-top: 8px;
+    width: 95%;
+    padding-left: 8px;
+}
+
+.bottom_apps img:nth-child(1n){
+    margin: 0 4px;
+}
+
+/* iphone front side style ends */
+
+
+
+
+/* iphone backside style media query begins */
+
+/* Responsive design for small devices (phones) begins
+/* @media only screen and (max-width: 600px) {
+  .iphone-backside-frame {
+      width: 80%;
+      height: 70%;
+      margin: 10px auto;
+  }
+  .camera-module {
+      top: 40px;
+      width: 80px;
+  }
+  .camera-lens {
+      width: 25px;
+      height: 25px;
+  }
+  .flash, .lidar {
+      width: 12px;
+      height: 12px;
+  }
+  .apple-logo img {
+      width: 30px;
+  }
+  .bottom-text p {
+      font-size: 8px;
+  }
+} */
+/* Responsive design for small devices (phones) ends */
+
+/* Responsive design for medium devices (tablets) begins */
+/* @media only screen and (min-width: 601px) and (max-width: 992px) {
+  .iphone-backside-frame {
+      width: 60%;
+      height: 80%;
+      margin: 15px auto;
+  }
+  .camera-module {
+      top: 45px;
+      width: 90px;
+  }
+  .camera-lens {
+      width: 28px;
+      height: 28px;
+  }
+  .flash, .lidar {
+      width: 14px;
+      height: 14px;
+  }
+  .apple-logo img {
+      width: 35px;
+  }
+  .bottom-text p {
+      font-size: 9px;
+  }
+}  */
+/* Responsive design for medium devices (tablets) ends */
+
+/* Styling for large devices (desktops) begins */
+/* No changes needed, as the original styles are suitable for large screens */
+/* @media only screen and (min-width: 993px) { */
+  /* No changes needed, as the original styles are suitable for large screens */
+/* } */
+/* Styling for large devices (desktops) ends */
+
+/* iphone backside style media query ends */
+
+
+
+/* iphone frontside screen style media query begins */
+
+/* Small devices (phones, 600px and down)
+@media only screen and (max-width: 600px) {
+    .iphone_border {
+      width: 80%;
+      height: 70%;
+      margin: 10px auto;
+    }
+    .top_notch {
+      top: 20px;
+      left: 280px;
+    }
+    .two_boxes {
+      top: 60px;
+      left: 230px;
+      gap: 10px;
+    }
+    .box_1, .box_2 {
+      height: 80px;
+      width: 80px;
+    }
+    .titles {
+      top: 120px;
+      left: 20px;
+      gap: 40px;
+    }
+    .volume_up {
+      top: 110px;
+      left: 230px;
+    }
+    .volume_down {
+      top: 153.5px;
+      left: 230px;
+    }
+    .switch {
+      top: 120px;
+      right: 230px;
+    }
+    .screen_apps {
+      top: 140px;
+      left: 10px;
+      gap: 8px 0px;
+    }
+    .bottom_apps {
+      top: 190px;
+      left: 5px;
+      padding-left: 5px;
+    }
+  }
+  
+  Medium devices (tablets, 601px to 992px)
+  @media only screen and (min-width: 601px) and (max-width: 992px) {
+    .iphone_border {
+      width: 60%;
+      height: 80%;
+      margin: 15px auto;
+    }
+    .top_notch {
+      top: 30px;
+      left: 380px;
+    }
+    .two_boxes {
+      top: 80px;
+      left: 330px;
+      gap: 12px;
+    }
+    .box_1, .box_2 {
+      height: 90px;
+      width: 90px;
+    }
+    .titles {
+      top: 140px;
+      left: 30px;
+      gap: 50px;
+    }
+    .volume_up {
+      top: 130px;
+      left: 330px;
+    }
+    .volume_down {
+      top: 173.5px;
+      left: 330px;
+    }
+    .switch {
+      top: 140px;
+      right: 330px;
+    }
+    .screen_apps {
+      top: 160px;
+      left: 12px;
+      gap: 10px 0px;
+    }
+    .bottom_apps {
+      top: 210px;
+      left: 8px;
+      padding-left: 8px;
+    }
+  }
+  
+  Large devices (desktops, 993px and up)
+  @media only screen and (min-width: 993px) {
+    /* No changes needed, as the original styles are suitable for large screens */
+
+/* iphone frontside screen style media query ends */
